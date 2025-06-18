@@ -1,0 +1,69 @@
+/* Estilo general */
+body {
+    color: #3EB5A7;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para encabezados */
+h1, h2, h3 {
+    color: #3EB5A7;
+}
+
+/* Tarjetas (cards) con fondo UEA */
+.card {
+    background-color: #BDCA32;
+    color: #333;
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2);
+}
+.card-title {
+    font-weight: 400;
+}
+
+
+/* Botón personalizado */
+.btn-primary {
+    background-color: #3EB5A7;
+    border-color: #3EB5A7;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 6px;
+}
+
+.btn-primary:hover {
+    background-color: #329d91;
+    transform: scale(1.05);
+}
+
+/* Estilo para navbar y footer con color institucional */
+.bg-uea {
+    background-color: #384152;
+    color: white;
+}
+/* Enlaces en footer */
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #BDCA32;
+}
+
+/* Media query: cambia fondo en pantallas pequeñas */
+@media (max-width: 576px) {
+    body {
+        background-color: #f7f7f7;
+    }
+
+    .btn-primary {
+        background-color: #2aa89a;
+        border-color: #2aa89a;
+    }
+}
